@@ -1,0 +1,16 @@
+/* Пример CSS для стилизации таблицы */
+.post-list {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  .post-list th, .post-list td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+  }
+  
+  .post-list th {
+	background-color: #f2f2f2;
+  }
+  
