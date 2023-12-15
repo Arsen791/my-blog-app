@@ -8,13 +8,13 @@ const Home = () => {
       id: 1,
       title: 'Post 1',
       content: 'Content of Post 1...',
-      comments: ['Comment 1', 'Comment 2']
+      comments: ['Comment 1']
     },
     {
       id: 2,
       title: 'Post 2',
       content: 'Content of Post 2...',
-      comments: ['Comment 1', 'Comment 2', 'Comment 3']
+      comments: ['Comment 1']
     },
     // Другие посты...
   ]);
@@ -23,10 +23,14 @@ const Home = () => {
     setPosts([...posts, newPost]);
   };
 
+  const deletePost = (postId) => {
+    setPosts(prevPosts => prevPosts.filter(post => post.id !== postId));
+  };
+
   return (
     <div>
       <h1>Домашняя страница блога</h1>
-      <PostList postsData={posts} />
+      <PostList postsData={posts}  onDeletePost={deletePost} />
 
       {/* Форма для добавления новой статьи */}
       <AddPostForm onAddPost={addPost} />

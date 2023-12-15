@@ -1,7 +1,7 @@
 import React from 'react';
 import './post.css';
 
-const PostList = ({ postsData }) => {
+const PostList = ({ postsData, onDeletePost  }) => {
   return (
     <table className="post-list">
       <thead>
@@ -17,6 +17,7 @@ const PostList = ({ postsData }) => {
             <td>{post.title}</td>
             <td>{post.content}</td>
             <td>{post.comments.join(', ')}</td>
+            <button onClick={() => onDeletePost(post.id)}>Delete</button>
           </tr>
         ))}
       </tbody>

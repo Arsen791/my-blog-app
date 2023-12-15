@@ -40,14 +40,11 @@ export default class Header extends Component {
               <li>
                 <button onClick={() => this.navigateTo('home')}>Home</button>
               </li>
-              <li>
-                <button onClick={() => this.navigateTo('add')}>Add Post</button>
-              </li>
-              {/* Добавьте другие кнопки по мере необходимости */}
+
             </ul>
           </nav>
         </header>
-        {this.renderPage()} {/* Отображение содержимого страницы */}
+        {this.renderPage()} 
       </div>
     );
   }

@@ -1,54 +1,45 @@
 /* header.css */
 
-/* Основные стили для header */
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: aqua;
-
+  background-color: #0056b3;
+  color: white;
 }
 
-/* Стили для логотипа */
 .logo {
   font-size: 24px;
 }
 
-/* Стили для кнопки логотипа */
 .logo button {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-size: inherit;
-  transition: color 0.3s ease;
 }
 
-/* Стили для навигационной панели */
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
 }
 
-/* Стили для элементов навигационной панели */
 nav li {
   margin-right: 20px;
 }
 
-/* Стили для кнопок навигационной панели */
 .nav-links button {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-size: inherit;
-  transition: color 0.3s ease;
 }
 
-/* Стили для кнопок навигационной панели при наведении */
 .nav-links button:hover {
-  text-decoration: underline;
+
   color: #ffc107;
 }
