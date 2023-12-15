@@ -1,20 +1,35 @@
-import React from 'react';
-import PostList from '../post'; // Импортируем компонент списка статей
+import React, { useState } from 'react';
+import PostList from '../post';
+import AddPostForm from '../addpostform';
 
 const Home = () => {
+  const [posts, setPosts] = useState([
+    {
+      id: 1,
+      title: 'Post 1',
+      content: 'Content of Post 1...',
+      comments: ['Comment 1', 'Comment 2']
+    },
+    {
+      id: 2,
+      title: 'Post 2',
+      content: 'Content of Post 2...',
+      comments: ['Comment 1', 'Comment 2', 'Comment 3']
+    },
+    // Другие посты...
+  ]);
 
-  
-  // Пример данных со статьями (замените данными из вашего API или вашими собственными данными)
-  const posts = [
-    { id: 1, title: 'Заголовок статьи 1', summary: 'Краткое описание статьи 1' },
-    { id: 2, title: 'Заголовок статьи 2', summary: 'Краткое описание статьи 2' },
-    // Другие статьи...
-  ];
+  const addPost = (newPost) => {
+    setPosts([...posts, newPost]);
+  };
 
   return (
     <div>
       <h1>Домашняя страница блога</h1>
-      <PostList posts={posts} /> {/* Передаем массив статей в компонент списка статей */}
+      <PostList postsData={posts} />
+
+      {/* Форма для добавления новой статьи */}
+      <AddPostForm onAddPost={addPost} />
     </div>
   );
 };

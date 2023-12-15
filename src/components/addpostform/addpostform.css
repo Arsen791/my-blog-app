@@ -1,0 +1,44 @@
+/* item-add-form.css */
+
+.item-add-form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  .item-add-form h2 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+  }
+  
+  .item-add-form label {
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  .item-add-form input[type="text"],
+  .item-add-form textarea {
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 1em;
+  }
+  
+  .item-add-form button {
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 1em;
+  }
+  
+  .item-add-form button:hover {
+	background-color: #0056b3;
+  }
+  

@@ -1,40 +1,54 @@
-/* Header.css */
+/* header.css */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .logo a:hover {
-    text-decoration: underline;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav-links li a:hover {
-    text-decoration: underline;
-  }
-  
+/* Основные стили для header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: aqua;
+
+}
+
+/* Стили для логотипа */
+.logo {
+  font-size: 24px;
+}
+
+/* Стили для кнопки логотипа */
+.logo button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Стили для навигационной панели */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+/* Стили для элементов навигационной панели */
+nav li {
+  margin-right: 20px;
+}
+
+/* Стили для кнопок навигационной панели */
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Стили для кнопок навигационной панели при наведении */
+.nav-links button:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './header.css';
 import Home from '../home';
-import ParentComponent from '../parentcomponent';
+
 
 export default class Header extends Component {
   constructor(props) {
@@ -21,8 +21,8 @@ export default class Header extends Component {
     const { currentPage } = this.state;
     if (currentPage === 'home') {
       return <Home />;
-    } else if (currentPage === 'add') {
-      return <ParentComponent />;
+    } else {
+
     }
     // Другие условия для отображения других компонентов в зависимости от страницы
     return null; // Здесь можно вернуть другие компоненты для других страниц
