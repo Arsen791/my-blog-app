@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PostList from '../post';
 import AddPostForm from '../addpostform';
+import ErrorBoundary from '../errorboundry';
 
 const Home = () => {
   const [posts, setPosts] = useState([
@@ -33,7 +34,11 @@ const Home = () => {
       <PostList postsData={posts}  onDeletePost={deletePost} />
 
       {/* Форма для добавления новой статьи */}
+      <ErrorBoundary>
       <AddPostForm onAddPost={addPost} />
+</ErrorBoundary>
+
+      
     </div>
   );
 };
