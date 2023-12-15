@@ -5,14 +5,11 @@ import Home from "../home";
 export default class App extends Component {
 	render() {
 	  return (
-		<div>
-			
+		<div>		
 		<Header/>
 		<Home/>
 		</div>
-
-		
-		
+	
 	  );
 	}
   }
